@@ -593,7 +593,10 @@ body {
   font-size: 30px;
   line-height: 1.8;
   text-align: center;
-  width: 393px;
+  width: 100%;
+  max-width: 393px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section-contact {
@@ -798,7 +801,7 @@ body {
   position: absolute;
   left: 0;
   right: 0;
-  top: 85px;
+  top: 90px;
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -881,6 +884,22 @@ body {
   cursor: pointer;
 }
 
+@media (min-width: 995px) {
+  .home-container .outer {
+    z-index: 199;
+    position: relative;
+  }
+  .contact-section h1 {
+    font-size: 250px;
+    z-index: 1;
+  }
+  .contact-section h1:after {
+    top: 170px;
+  }
+  .contact-section h2 {
+    margin-top: -120px;
+  }
+}
 .header {
   padding: 32px 0 0 0;
   display: flex;
@@ -967,7 +986,6 @@ body {
 }
 
 .home-container {
-  max-width: 463px;
   margin: 0 auto;
   background-color: #fafafa;
   position: relative;
@@ -1390,6 +1408,75 @@ body {
   background-color: black;
 }
 
+@media (max-width: 995px) {
+  .home-container {
+    max-width: 463px;
+  }
+}
+@media (min-width: 995px) {
+  .home-container {
+    max-width: 1276px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+  .contact-section {
+    margin-top: -120px;
+  }
+  .contact-section .contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 140px;
+  }
+  .contact-section .contact-info {
+    margin-left: 40px;
+  }
+  .contact-section .contact-info h3 {
+    margin: 0;
+    margin-bottom: 30px;
+    color: rgba(78, 77, 77, 0.837);
+  }
+  .contact-section .contact-info .contact-items .contact-item p {
+    color: gray;
+  }
+  .contact-section .contact-form {
+    flex-grow: 1;
+    margin-right: 40px;
+    margin-left: 160px;
+    margin-top: 0;
+  }
+  .section-footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 350px;
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+  .section-footer-container .section-contact {
+    max-width: 294px;
+    margin-top: 0;
+  }
+  .section-footer-container .section-contact h2 {
+    margin-top: 0;
+  }
+  .section-footer-container .section-latest-blog {
+    margin-top: 0;
+  }
+  .section-footer-container .section-latest-blog h1 {
+    margin-top: 0;
+  }
+  .section-footer-container .section-newsletter {
+    margin-top: 0;
+    max-width: 359px;
+  }
+  .section-footer-container .section-newsletter h2 {
+    margin-top: 0;
+  }
+  .footer {
+    padding-bottom: 120px;
+  }
+}
 .skills-section {
   padding: 0 15px 80px 15px;
 }

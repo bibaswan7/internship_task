@@ -310,7 +310,10 @@ body {
       font-size: 30px;
       line-height: 1.8;
       text-align: center;
-      width: 393px;
+      width: 100%;
+      max-width: 393px;
+      margin-left: auto;
+      margin-right: auto;
 
     }
 
@@ -556,7 +559,7 @@ margin-bottom: 60px;
       position: absolute;
       left: 0;
       right: 0;
-      top: 85px;
+      top: 90px;
       font-size: 12px;
       text-transform: uppercase;
       letter-spacing: 3px;
@@ -648,4 +651,32 @@ margin-bottom: 60px;
       }
     }
   }
+}
+
+
+
+
+@media (min-width:995px) {
+
+.home-container{
+  .outer{
+    z-index: 199;
+    position: relative;
+  }
+}
+
+  .contact-section{
+    h1{
+      font-size: 250px;
+      z-index: 1;
+
+      &:after{
+        top: 170px;
+      }
+    }
+    h2{
+      margin-top: -120px;
+    }
+  }
+  
 }
