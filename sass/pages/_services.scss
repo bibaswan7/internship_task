@@ -1,0 +1,55 @@
+.skills-section {
+    padding: 0 15px 80px 15px;
+  
+    .circular-container{
+       h3{
+        font-family: "Playfair1";
+        font-size: 22px;
+        font-weight: 200;
+        margin-bottom: 30px;
+
+       }
+        
+    
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+        .circular{
+        height: 180px;
+        width: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        // background-image: conic-gradient(rgb(0, 183, 255) 45deg, gray 45deg);
+        position: relative;
+
+        &::after{
+          /* border: 1px solid black; */
+          content: "";
+          left: 50%;
+          top: 50%;
+          /* transform: translateY(-50%); */
+          transform: translate(-50%, -50%);
+          position: absolute;
+          height: 178px;
+          width: 178px;
+          border-radius: 50%;
+          /* z-index: 32; */
+          background-color: #fafafa;
+        }
+
+        h2{
+            position: absolute;
+            z-index: 999;
+            font-family: 'Karla';
+            color: black;
+            // background-color: red;
+
+        }
+      }}
+      
+  }

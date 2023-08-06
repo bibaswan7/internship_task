@@ -1,0 +1,20 @@
+
+.logo {
+
+    background-color: $black;
+    font-family: 'Karla';
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: max-content;
+    letter-spacing: 5px;
+
+    .upper-logo{
+        color: white;
+    }
+    .lower-logo{
+        color: white;
+    }
+}

@@ -1,0 +1,70 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+.outer {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    width: max-content;
+
+    &:hover .menu::after {
+        transform: translateY(3px);
+      }
+      
+      &:hover .menu::before {
+        transform: translateY(-3px);
+      }
+  }
+
+  .menu {
+    height: 2px;
+    width: 20px;
+    background-color: black;
+    position: relative;
+    transition: transform 0.1s;
+
+    &::before {
+        display: block;
+        position: absolute;
+        content: "";
+        top: -7px;
+        height: 2px;
+        width: 20px;
+        background-color: black;
+        transition: transform 0.1s;
+      }
+
+      &::after {
+        display: block;
+        position: absolute;
+        content: " ";
+        height: 2px;
+        width: 20px;
+        background-color: black;
+        bottom: -7px;
+        transition: transform 0.1s;
+      }
+
+
+  }
+
+  .btn{
+    // color: $text-primary;
+    background-color: transparent;
+    border: 1px solid #d9d9d9;
+    padding: 8px 20px;
+    font-family: 'Karla';
+    letter-spacing: 2px;
+    font-size: 13px;
+    margin-bottom: 24px;
+    font-weight: 500;
+    color: gray;
+  }
+  
+  
+  
+  
+  
+  
+  

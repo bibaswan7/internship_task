@@ -1,0 +1,7 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap');
+
+@include fontName ('Playfair1','../../assets/fonts/Playfair1.woff2');
+@include fontName ('Playfair2','../../assets/fonts/Playfair2.woff2');

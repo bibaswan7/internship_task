@@ -1,0 +1,1829 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap");
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+  box-sizing: border-box;
+}
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: "Playfair1";
+  src: url("../../assets/fonts/Playfair1.woff2");
+}
+@font-face {
+  font-family: "Playfair2";
+  src: url("../../assets/fonts/Playfair2.woff2");
+}
+/**
+ * Basic typography style for copy text
+ */
+body {
+  color: #000;
+}
+
+.section-title h1 {
+  font-family: "Playfair1";
+  color: rgba(0, 0, 0, 0.05);
+  font-size: 60px;
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+
+.intro-section {
+  padding-bottom: 80px;
+  margin-top: 48px;
+  margin-bottom: 100px;
+}
+.intro-section .intro-title h1 {
+  font-family: "Playfair2";
+  font-size: 50px;
+  font-weight: 300;
+  margin: 0;
+}
+.intro-section .intro-about {
+  font-family: "Karla";
+  display: flex;
+  justify-content: flex-end;
+}
+.intro-section .intro-about .text-trans {
+  text-transform: uppercase;
+  transform: rotate(90deg) translateY(160px) translateX(-85px);
+  color: rgba(0, 0, 0, 0.805);
+  font-weight: 100;
+  font-size: 15px;
+  letter-spacing: 16px;
+}
+.intro-section .intro-about .text-trans:after {
+  content: "";
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.805);
+  height: 1px;
+  width: 60px;
+  transform: translateX(125px) translateY(-25px);
+}
+.intro-section .intro-about .intro-info p {
+  width: 337px;
+  margin-bottom: 24px;
+  line-height: 1.8;
+  font-size: 16px;
+  color: gray;
+}
+.intro-section .intro-about .intro-info .social-media-icons {
+  margin-bottom: 24px;
+}
+.intro-section .intro-about .intro-info .social-media-icons .icon {
+  color: #CA82F8;
+  font-size: 24px;
+}
+
+.services-section h1 {
+  font-family: "Playfair1";
+  color: rgba(0, 0, 0, 0.05);
+  font-size: 60px;
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+.services-section .services-info {
+  font-family: "Karla";
+}
+.services-section .services-info > p {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #bfbfbf;
+  font-size: 14px;
+  letter-spacing: 3px;
+}
+.services-section .services-info h2 {
+  font-family: "Playfair1";
+  font-size: 34px;
+  width: 401px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 51px;
+}
+.services-section .services-info > h3 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: "Karla";
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.402);
+}
+.section-works h1 {
+  font-family: "Playfair1";
+  color: rgba(0, 0, 0, 0.05);
+  font-size: 60px;
+  text-align: center;
+  margin: 0 0 30px 0;
+  position: relative;
+}
+.section-works h1::after {
+  content: "PORTFOLIO";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 85px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: "Karla";
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.402);
+  margin-bottom: 10px;
+}
+.section-works h3 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: "Karla";
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.402);
+  text-align: center;
+  display: block;
+  margin-bottom: 10px;
+}
+.section-works h2 {
+  font-family: "Playfair1";
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0px;
+  margin-bottom: 51px;
+  text-align: center;
+  display: block;
+}
+
+.section-blog h1 {
+  font-family: "Playfair1";
+  color: rgba(0, 0, 0, 0.05);
+  font-size: 60px;
+  text-align: center;
+  margin: 0 0 30px 0;
+  position: relative;
+}
+.section-blog h1::after {
+  content: "blog";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 85px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: "Karla";
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.402);
+  margin-bottom: 10px;
+}
+.section-blog h2 {
+  font-family: "Playfair1";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0px;
+  margin-top: -20px;
+  position: relative;
+}
+.section-blog .blog-header {
+  position: relative;
+}
+.section-blog .blog-header h2 {
+  font-family: "Playfair1";
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0px;
+  margin-bottom: 51px;
+  text-align: center;
+}
+.section-blog .blog-header .navigation-icons {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.section-blog .blog-header .navigation-icons .icons {
+  width: auto;
+  background-color: white;
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+.section-blog .blog-image p {
+  font-family: "Karla";
+  letter-spacing: 4px;
+  padding: 20px 10px;
+  width: max-content;
+  background-color: white;
+  position: relative;
+  bottom: 45px;
+  left: 20px;
+  z-index: 999;
+  font-size: 12px;
+  box-shadow: 0px 2px 49px -4px rgba(0, 0, 0, 0.21);
+}
+.section-blog p {
+  margin: 0;
+  line-height: 1.8;
+  font-size: 16px;
+  color: gray;
+  font-family: "Karla";
+}
+
+.section-testimonials {
+  padding: 80px 15px;
+}
+.section-testimonials h1 {
+  font-family: "Playfair1";
+  color: rgba(0, 0, 0, 0.05);
+  font-size: 60px;
+  text-align: center;
+  margin: 0 0 30px 0;
+  position: relative;
+}
+.section-testimonials h1::after {
+  content: "testimonies";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 85px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: "Karla";
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.402);
+}
+.section-testimonials h2 {
+  font-family: "Playfair1";
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 50px;
+  margin-bottom: 51px;
+  text-align: center;
+}
+.section-testimonials .quote {
+  padding: 10px 20px;
+}
+.section-testimonials .quote p {
+  font-family: "Playfair1";
+  margin-bottom: 45px;
+  font-size: 30px;
+  line-height: 1.8;
+  text-align: center;
+  width: 393px;
+}
+
+.section-contact {
+  margin-top: 220px;
+  margin-bottom: 118px;
+}
+.section-contact h2 {
+  font-family: "Playfair1";
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 60px;
+}
+.section-contact p {
+  line-height: 1.8;
+  font-size: 16px;
+  color: gray;
+  font-family: "Karla";
+  margin-bottom: 24px;
+}
+.section-contact h3 {
+  font-family: "Karla";
+}
+.section-contact a {
+  text-decoration: none;
+  color: #CA82F8;
+  font-family: "Karla";
+  font-size: 16px;
+  display: inline-block;
+  margin-bottom: 24px;
+}
+.section-contact .social-media-icons {
+  margin-bottom: 24px;
+}
+.section-contact .social-media-icons .icon {
+  color: #CA82F8;
+  font-size: 24px;
+}
+
+.section-latest-blog {
+  margin-bottom: 80px;
+}
+.section-latest-blog h1 {
+  font-family: "Playfair1";
+  font-size: 30px;
+  font-weight: 100;
+  margin-bottom: 60px;
+}
+.section-latest-blog h2 {
+  font-family: "Playfair1";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+  margin-bottom: 40px;
+}
+.section-latest-blog h3 {
+  font-family: "Karla";
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.section-newsletter {
+  margin-bottom: 80px;
+}
+.section-newsletter h2 {
+  font-family: "Playfair1";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+  margin-bottom: 60px;
+}
+.section-newsletter p {
+  margin-bottom: 24px;
+  line-height: 1.8;
+  font-size: 16px;
+  color: gray;
+  font-family: "Karla";
+}
+.section-newsletter form {
+  margin-bottom: 30px;
+}
+.section-newsletter form input[type=email] {
+  width: 100%;
+  height: 50px;
+  border-radius: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fafafa;
+  margin-bottom: 5px;
+  text-align: center;
+  font-family: "Karla";
+  transition: border-color ease-in-out 0.15s;
+}
+.section-newsletter form input[type=email]:focus {
+  border-color: #CA82F8;
+  outline: none;
+}
+.section-newsletter form button {
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 30px;
+  letter-spacing: 2px;
+  font-size: 13px;
+  background: #d49af9;
+  outline: none;
+  text-align: center;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  font-family: "Karla";
+  color: white;
+  border: none;
+}
+
+.footer {
+  padding-bottom: 128px;
+}
+.footer p {
+  line-height: 1.8;
+  font-size: 16px;
+  color: gray;
+  font-family: "Karla";
+  text-align: center;
+}
+.footer p span {
+  color: #CA82F8;
+}
+
+.skills-section {
+  padding: 80px 15px;
+}
+.skills-section h1 {
+  font-family: "Playfair1";
+  color: rgba(0, 0, 0, 0.05);
+  font-size: 60px;
+  text-align: center;
+  margin: 0 0 30px 0;
+  position: relative;
+}
+.skills-section h1::after {
+  content: "skills";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 85px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: "Karla";
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.402);
+}
+.skills-section h2 {
+  font-family: "Playfair1";
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 50px;
+  margin-bottom: 51px;
+  text-align: center;
+}
+.skills-section .quote {
+  padding: 10px 20px;
+}
+.skills-section .quote p {
+  font-family: "Playfair1";
+  margin-bottom: 45px;
+  font-size: 30px;
+  line-height: 1.8;
+  text-align: center;
+  width: 393px;
+}
+
+.intro-paragraph {
+  margin: 80px 0 100px 0;
+}
+.intro-paragraph p {
+  margin-bottom: 24px;
+  line-height: 1.8;
+  font-size: 16px;
+  color: gray;
+  font-family: "Karla";
+  width: 433px;
+}
+
+.contact-section {
+  padding: 80px 15px;
+}
+.contact-section h1 {
+  font-family: "Playfair1";
+  color: rgba(0, 0, 0, 0.05);
+  font-size: 60px;
+  text-align: center;
+  margin: 0 0 30px 0;
+  position: relative;
+}
+.contact-section h1::after {
+  content: "contact";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 85px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: "Karla";
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.402);
+}
+.contact-section h2 {
+  font-family: "Playfair1";
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 50px;
+  margin-bottom: 51px;
+  text-align: center;
+}
+.contact-section .contact-info {
+  padding-left: 15px;
+}
+.contact-section .contact-info h3 {
+  font-family: "Playfair1";
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.805);
+  font-weight: 500;
+}
+.contact-section .contact-info .contact-items {
+  margin-left: 5px;
+}
+.contact-section .contact-info .contact-items .contact-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 35px;
+}
+.contact-section .contact-info .contact-items .contact-item p {
+  font-family: "Karla";
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.805);
+}
+.contact-section .contact-info .contact-items .contact-item a {
+  text-decoration: none;
+  color: #CA82F8;
+}
+.contact-section .contact-form {
+  margin-top: 60px;
+}
+.contact-section .contact-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+}
+.contact-section .contact-form form textarea {
+  width: 100%;
+  height: 179px;
+  border: none;
+  font-family: "Karla";
+  outline: none;
+  padding: 10px 20px;
+  color: gray;
+}
+.contact-section .contact-form form input {
+  font-family: "Karla";
+  width: 100%;
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  height: 50px;
+}
+.contact-section .contact-form form button {
+  margin: 0 4px 4px 0;
+  padding: 13px 20px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-family: "Karla";
+  color: white;
+  background-color: #CA82F8;
+  border: none;
+  cursor: pointer;
+}
+
+.header {
+  padding: 32px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.outer {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  width: max-content;
+}
+.outer:hover .menu::after {
+  transform: translateY(3px);
+}
+.outer:hover .menu::before {
+  transform: translateY(-3px);
+}
+
+.menu {
+  height: 2px;
+  width: 20px;
+  background-color: black;
+  position: relative;
+  transition: transform 0.1s;
+}
+.menu::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: -7px;
+  height: 2px;
+  width: 20px;
+  background-color: black;
+  transition: transform 0.1s;
+}
+.menu::after {
+  display: block;
+  position: absolute;
+  content: " ";
+  height: 2px;
+  width: 20px;
+  background-color: black;
+  bottom: -7px;
+  transition: transform 0.1s;
+}
+
+.btn {
+  background-color: transparent;
+  border: 1px solid #d9d9d9;
+  padding: 8px 20px;
+  font-family: "Karla";
+  letter-spacing: 2px;
+  font-size: 13px;
+  margin-bottom: 24px;
+  font-weight: 500;
+  color: gray;
+}
+
+.logo {
+  background-color: #000;
+  font-family: "Karla";
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: max-content;
+  letter-spacing: 5px;
+}
+.logo .upper-logo {
+  color: white;
+}
+.logo .lower-logo {
+  color: white;
+}
+
+.image-section img {
+  width: 100%;
+}
+
+.pad {
+  padding: 0 15px;
+}
+
+.home-container {
+  max-width: 463px;
+  margin: 0 auto;
+  background-color: #fafafa;
+  position: relative;
+}
+
+.header {
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.menu-expand {
+  top: 0;
+  overflow-y: scroll;
+  padding: 0 15px;
+  position: absolute;
+  right: 0;
+  background-color: #fafafa;
+  height: 100vh;
+  z-index: 8000;
+  width: 300px;
+}
+.menu-expand .close-btn-container .close-btn {
+  background-color: #f2f2f2;
+  font-size: 35px;
+  position: relative;
+  padding: 7px;
+  left: 200px;
+  top: 10px;
+  cursor: pointer;
+}
+.menu-expand .close-btn-container:hover .close-btn {
+  background-color: black;
+  color: white;
+}
+.menu-expand form {
+  display: flex;
+  padding: 0 15px;
+  margin: 0 15px;
+  margin-top: 30px;
+  width: 203px;
+}
+.menu-expand form input[type=text] {
+  height: 50px;
+  border: 2px solid #f2f2f2;
+  font-size: 14px;
+  font-family: "Karla";
+  padding: 10px 42px 10px 20px;
+}
+.menu-expand form input[type=text]:focus {
+  outline: none;
+}
+.menu-expand form .search-icon {
+  background-color: #CA82F8;
+  margin: 0 4px 4px 0;
+  padding: 16px;
+  color: white;
+  position: relative;
+  right: 48px;
+  cursor: pointer;
+}
+.menu-expand .menu-works h2 {
+  font-family: "Playfair1";
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+.menu-expand .menu-works .menu-img-gallery {
+  display: grid;
+  max-width: max-content;
+  margin: 0 auto 100px auto;
+  grid-template: 150px 150px/101px 101px;
+}
+.menu-expand .menu-works .menu-img-gallery img {
+  width: 101px;
+  height: 150px;
+  object-fit: cover;
+}
+.menu-expand .menu-items ul {
+  margin-left: -8px;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  list-style: none;
+}
+.menu-expand .menu-items ul li a {
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 0;
+  margin: 10px 0;
+  font-family: "Karla";
+}
+
+.intro-title {
+  margin-bottom: 20px;
+}
+
+.services-section {
+  padding: 0 15px 80px 15px;
+}
+.services-section .services-info {
+  padding: 48px 32px 48px 0;
+}
+.services-section .services-info .services-list .item-container {
+  margin-bottom: 64px;
+}
+.services-section .services-info .services-list .item-container h3 {
+  margin-bottom: 30px;
+  color: rgba(0, 0, 0, 0.756);
+  font-size: 16px;
+}
+.services-section .services-info .services-list .item-container p {
+  width: 401px;
+  font-weight: 400;
+  font-family: "Karla";
+  font-size: 16px;
+  line-height: 1.8;
+  color: gray;
+}
+.services-section .services-info .services-list .item-container ul li {
+  margin-bottom: 10px;
+  color: rgba(0, 0, 0, 0.402);
+  line-height: 1.8;
+}
+
+.section-works .work-item {
+  margin-bottom: 80px;
+}
+.section-works .work-item .work-banner-1 {
+  background-image: url("../../assets/images/work-1.jpg");
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+.section-works .work-item .work-banner-1 .banner-container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+.section-works .work-item .work-banner-1 .banner-title {
+  z-index: 101;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 282px;
+  height: 161px;
+  background: white;
+  transition: all 0.2s ease-in;
+}
+.section-works .work-item .work-banner-1 .banner-title h2 {
+  margin: 0;
+  font-size: 34px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.section-works .work-item .work-banner-1:hover .banner-container {
+  z-index: 10;
+  opacity: 100;
+  background: rgba(0, 0, 0, 0.3);
+}
+.section-works .work-item .work-banner-1:hover .banner-title {
+  transform: scale(1.2);
+}
+.section-works .work-item .work-banner-2 {
+  background-image: url("../../assets/images/work-2.jpg");
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+.section-works .work-item .work-banner-2 .banner-container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+.section-works .work-item .work-banner-2 .banner-title {
+  z-index: 101;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 282px;
+  height: 161px;
+  background: white;
+  transition: all 0.2s ease-in;
+}
+.section-works .work-item .work-banner-2 .banner-title h2 {
+  margin: 0;
+  font-size: 34px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.section-works .work-item .work-banner-2:hover .banner-container {
+  z-index: 10;
+  opacity: 100;
+  background: rgba(0, 0, 0, 0.3);
+}
+.section-works .work-item .work-banner-2:hover .banner-title {
+  transform: scale(1.2);
+}
+.section-works .work-item .work-banner-3 {
+  background-image: url("../../assets/images/work-3.jpg");
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+.section-works .work-item .work-banner-3 .banner-container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+.section-works .work-item .work-banner-3 .banner-title {
+  z-index: 101;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 282px;
+  height: 161px;
+  background: white;
+  transition: all 0.2s ease-in;
+}
+.section-works .work-item .work-banner-3 .banner-title h2 {
+  margin: 0;
+  font-size: 34px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.section-works .work-item .work-banner-3:hover .banner-container {
+  z-index: 10;
+  opacity: 100;
+  background: rgba(0, 0, 0, 0.3);
+}
+.section-works .work-item .work-banner-3:hover .banner-title {
+  transform: scale(1.2);
+}
+.section-works .work-item .work-banner-4 {
+  background-image: url("../../assets/images/work-4.jpg");
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+.section-works .work-item .work-banner-4 .banner-container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+.section-works .work-item .work-banner-4 .banner-title {
+  z-index: 101;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 282px;
+  height: 161px;
+  background: white;
+  transition: all 0.2s ease-in;
+}
+.section-works .work-item .work-banner-4 .banner-title h2 {
+  margin: 0;
+  font-size: 34px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.section-works .work-item .work-banner-4:hover .banner-container {
+  z-index: 10;
+  opacity: 100;
+  background: rgba(0, 0, 0, 0.3);
+}
+.section-works .work-item .work-banner-4:hover .banner-title {
+  transform: scale(1.2);
+}
+.section-works .work-item p {
+  max-width: 403px;
+  margin: auto;
+  line-height: 1.8;
+  font-size: 16px;
+  color: gray;
+  font-family: "Karla";
+  margin-top: 40px;
+  margin-bottom: 24px;
+}
+.section-works .work-item .view-detail {
+  display: flex;
+  justify-content: flex-end;
+}
+.section-works .work-item .view-detail a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Karla";
+  font-size: 13px;
+  letter-spacing: 4px;
+  color: rgba(0, 0, 0, 0.805);
+  margin-bottom: 24px;
+  position: relative;
+}
+.section-works .work-item .view-detail a::before {
+  content: "";
+  background-color: black;
+  width: 40px;
+  height: 1px;
+  position: absolute;
+  left: -60px;
+  top: 7px;
+}
+
+.section-blog {
+  margin-bottom: 96px;
+}
+.section-blog .blog-image {
+  overflow: hidden;
+}
+.section-blog .blog-image .image-wrapper {
+  height: 100%;
+  overflow: hidden;
+}
+.section-blog .blog-image img {
+  width: 100%;
+  transition: transform 0.3s ease;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.section-blog .blog-image:hover .banner-container {
+  z-index: 10;
+  opacity: 100;
+  background: rgba(0, 0, 0, 0.3);
+}
+.section-blog .blog-image:hover img {
+  transform: scale(1.2);
+}
+
+@keyframes slideDownAnimation {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.image-section {
+  overflow: hidden;
+  height: 3px;
+}
+
+.slidedown {
+  transition: height 1s cubic-bezier(0.6, 0.4, 0.1, 0.335);
+  height: 526px;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+}
+.slick-dots li {
+  display: inline-block;
+  margin: 0;
+}
+.slick-dots li button {
+  font-size: 0; /* Hide any text within the buttons */
+  width: 30px;
+  height: 3px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(128, 128, 128, 0.511);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.slick-dots li button:hover {
+  background-color: gray;
+}
+.slick-dots li.slick-active button {
+  background-color: black;
+}
+
+.skills-section {
+  padding: 0 15px 80px 15px;
+}
+.skills-section .circular-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.skills-section .circular-container h3 {
+  font-family: "Playfair1";
+  font-size: 22px;
+  font-weight: 200;
+  margin-bottom: 30px;
+}
+.skills-section .circular-container .circular {
+  height: 180px;
+  width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: relative;
+}
+.skills-section .circular-container .circular::after {
+  /* border: 1px solid black; */
+  content: "";
+  left: 50%;
+  top: 50%;
+  /* transform: translateY(-50%); */
+  transform: translate(-50%, -50%);
+  position: absolute;
+  height: 178px;
+  width: 178px;
+  border-radius: 50%;
+  /* z-index: 32; */
+  background-color: #fafafa;
+}
+.skills-section .circular-container .circular h2 {
+  position: absolute;
+  z-index: 999;
+  font-family: "Karla";
+  color: black;
+}
+
+.projects-page {
+  margin-bottom: 280px;
+}
+.projects-page .section-works .work-item {
+  margin-bottom: 80px;
+}
+.projects-page .section-works .work-item .work-banner-1 {
+  background-image: url("../../assets/images/work-1.jpg");
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+.projects-page .section-works .work-item .work-banner-1 .banner-container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+.projects-page .section-works .work-item .work-banner-1 .banner-title {
+  z-index: 101;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 282px;
+  height: 161px;
+  background: white;
+  transition: all 0.2s ease-in;
+}
+.projects-page .section-works .work-item .work-banner-1 .banner-title h2 {
+  margin: 0;
+  font-size: 34px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.projects-page .section-works .work-item .work-banner-1:hover .banner-container {
+  z-index: 10;
+  opacity: 100;
+  background: rgba(0, 0, 0, 0.3);
+}
+.projects-page .section-works .work-item .work-banner-1:hover .banner-title {
+  transform: scale(1.2);
+}
+.projects-page .section-works .work-item .work-banner-2 {
+  background-image: url("../../assets/images/work-2.jpg");
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+.projects-page .section-works .work-item .work-banner-2 .banner-container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+.projects-page .section-works .work-item .work-banner-2 .banner-title {
+  z-index: 101;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 282px;
+  height: 161px;
+  background: white;
+  transition: all 0.2s ease-in;
+}
+.projects-page .section-works .work-item .work-banner-2 .banner-title h2 {
+  margin: 0;
+  font-size: 34px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.projects-page .section-works .work-item .work-banner-2:hover .banner-container {
+  z-index: 10;
+  opacity: 100;
+  background: rgba(0, 0, 0, 0.3);
+}
+.projects-page .section-works .work-item .work-banner-2:hover .banner-title {
+  transform: scale(1.2);
+}
+.projects-page .section-works .work-item .work-banner-3 {
+  background-image: url("../../assets/images/work-3.jpg");
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+.projects-page .section-works .work-item .work-banner-3 .banner-container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+.projects-page .section-works .work-item .work-banner-3 .banner-title {
+  z-index: 101;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 282px;
+  height: 161px;
+  background: white;
+  transition: all 0.2s ease-in;
+}
+.projects-page .section-works .work-item .work-banner-3 .banner-title h2 {
+  margin: 0;
+  font-size: 34px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.projects-page .section-works .work-item .work-banner-3:hover .banner-container {
+  z-index: 10;
+  opacity: 100;
+  background: rgba(0, 0, 0, 0.3);
+}
+.projects-page .section-works .work-item .work-banner-3:hover .banner-title {
+  transform: scale(1.2);
+}
+.projects-page .section-works .work-item .work-banner-4 {
+  background-image: url("../../assets/images/work-4.jpg");
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+.projects-page .section-works .work-item .work-banner-4 .banner-container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+.projects-page .section-works .work-item .work-banner-4 .banner-title {
+  z-index: 101;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 282px;
+  height: 161px;
+  background: white;
+  transition: all 0.2s ease-in;
+}
+.projects-page .section-works .work-item .work-banner-4 .banner-title h2 {
+  margin: 0;
+  font-size: 34px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.projects-page .section-works .work-item .work-banner-4:hover .banner-container {
+  z-index: 10;
+  opacity: 100;
+  background: rgba(0, 0, 0, 0.3);
+}
+.projects-page .section-works .work-item .work-banner-4:hover .banner-title {
+  transform: scale(1.2);
+}
+.projects-page .section-works .work-item .work-banner-5 {
+  background-image: url("../../assets/images/work-5.jpg");
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+.projects-page .section-works .work-item .work-banner-5 .banner-container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+.projects-page .section-works .work-item .work-banner-5 .banner-title {
+  z-index: 101;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 282px;
+  height: 161px;
+  background: white;
+  transition: all 0.2s ease-in;
+}
+.projects-page .section-works .work-item .work-banner-5 .banner-title h2 {
+  margin: 0;
+  font-size: 34px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.projects-page .section-works .work-item .work-banner-5:hover .banner-container {
+  z-index: 10;
+  opacity: 100;
+  background: rgba(0, 0, 0, 0.3);
+}
+.projects-page .section-works .work-item .work-banner-5:hover .banner-title {
+  transform: scale(1.2);
+}
+.projects-page .section-works .work-item .work-banner-6 {
+  background-image: url("../../assets/images/work-6.jpg");
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: 100;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+.projects-page .section-works .work-item .work-banner-6 .banner-container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+.projects-page .section-works .work-item .work-banner-6 .banner-title {
+  z-index: 101;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 282px;
+  height: 161px;
+  background: white;
+  transition: all 0.2s ease-in;
+}
+.projects-page .section-works .work-item .work-banner-6 .banner-title h2 {
+  margin: 0;
+  font-size: 34px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.projects-page .section-works .work-item .work-banner-6:hover .banner-container {
+  z-index: 10;
+  opacity: 100;
+  background: rgba(0, 0, 0, 0.3);
+}
+.projects-page .section-works .work-item .work-banner-6:hover .banner-title {
+  transform: scale(1.2);
+}
+.projects-page .section-works .work-item .work-banner-7 {
+  background-image: url("../../assets/images/work-7.jpg");
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+.projects-page .section-works .work-item .work-banner-7 .banner-container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+.projects-page .section-works .work-item .work-banner-7 .banner-title {
+  z-index: 101;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 282px;
+  height: 161px;
+  background: white;
+  transition: all 0.2s ease-in;
+}
+.projects-page .section-works .work-item .work-banner-7 .banner-title h2 {
+  margin: 0;
+  font-size: 34px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.projects-page .section-works .work-item .work-banner-7:hover .banner-container {
+  z-index: 10;
+  opacity: 100;
+  background: rgba(0, 0, 0, 0.3);
+}
+.projects-page .section-works .work-item .work-banner-7:hover .banner-title {
+  transform: scale(1.2);
+}
+.projects-page .section-works .work-item p {
+  max-width: 403px;
+  margin: auto;
+  line-height: 1.8;
+  font-size: 16px;
+  color: gray;
+  font-family: "Karla";
+  margin-top: 40px;
+  margin-bottom: 24px;
+}
+.projects-page .section-works .work-item .view-detail {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+.projects-page .section-works .work-item .view-detail a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Karla";
+  font-size: 13px;
+  letter-spacing: 4px;
+  color: rgba(0, 0, 0, 0.805);
+  margin-bottom: 24px;
+  position: relative;
+}
+.projects-page .section-works .work-item .view-detail a::before {
+  content: "";
+  background-color: black;
+  width: 40px;
+  height: 1px;
+  position: absolute;
+  left: -60px;
+  top: 7px;
+}
+
+.blog-page {
+  margin-bottom: 100px;
+}
+.blog-page .blog-image {
+  overflow: hidden;
+}
+.blog-page .blog-image .image-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+.blog-page .blog-image .image-wrapper img {
+  width: 100%;
+  transition: transform 0.3s ease;
+  object-fit: cover;
+  display: block;
+}
+.blog-page .blog-image .image-wrapper:hover .banner-container {
+  position: absolute;
+  z-index: 110;
+  opacity: 100;
+  background: rgba(0, 0, 0, 0.448);
+}
+.blog-page .blog-image .image-wrapper:hover img {
+  transform: scale(1.2);
+}
+.blog-page .blog-image .banner-container {
+  width: 100%;
+  height: 100%;
+}

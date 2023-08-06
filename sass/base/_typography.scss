@@ -1,0 +1,651 @@
+/**
+ * Basic typography style for copy text
+ */
+body {
+  color: $black;
+}
+
+.section-title {
+  
+  h1 {
+    font-family: "Playfair1";
+    color: $title-primary;
+    font-size: $text-lg;
+    text-align: center;
+    margin: 0 0 30px 0;
+  }
+}
+
+.intro-section {
+  padding-bottom: 80px;
+  margin-top: 48px;
+  margin-bottom: 100px;
+  .intro-title {
+    h1 {
+      font-family: "Playfair2";
+      font-size: 50px;
+      font-weight: 300;
+      margin: 0;
+    }
+  }
+
+  .intro-about {
+    font-family: "Karla";
+    display: flex;
+    justify-content: flex-end;
+
+    .text-trans {
+      text-transform: uppercase;
+      transform: rotate(90deg) translateY(160px) translateX(-85px);
+      color: $text-primary;
+      font-weight: 100;
+      font-size: 15px;
+      letter-spacing: 16px;
+
+      &:after {
+        content: "";
+        display: inline-block;
+        background-color: $text-primary;
+        height: 1px;
+        width: 60px;
+        transform: translateX(125px) translateY(-25px);
+      }
+    }
+
+    .intro-info {
+      p {
+        width: 337px;
+        margin-bottom: 24px;
+        line-height: 1.8;
+        font-size: 16px;
+        color: gray;
+      }
+      .social-media-icons {
+        margin-bottom: 24px;
+        .icon {
+          color: $text-link;
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+
+.services-section {
+  h1 {
+    font-family: "Playfair1";
+    color: $title-primary;
+    font-size: $text-lg;
+    text-align: center;
+    margin: 0 0 30px 0;
+  }
+
+  .services-info {
+    font-family: "Karla";
+
+    >p{
+      text-transform: uppercase;
+      // font-family: 'Karla';
+      font-weight: 600;
+      color: #bfbfbf;
+      font-size: 14px;
+      letter-spacing: 3px;
+
+    }
+    h2 {
+      font-family: "Playfair1";
+      font-size: 34px;
+      width: 401px;
+      font-weight: 400;
+      line-height: 1.5;
+      margin-bottom: 51px;
+    }
+    >h3 {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-family: "Karla";
+      font-weight: 800;
+      color: $text-light;
+    }
+    h3 {
+      // font-family: 'Karla';
+    }
+  }
+}
+
+.section-works {
+  h1 {
+    font-family: "Playfair1";
+    color: $title-primary;
+    font-size: $text-lg;
+    text-align: center;
+    margin: 0 0 30px 0;
+    position: relative;
+
+    &::after {
+      content: "PORTFOLIO";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 85px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-family: "Karla";
+      font-weight: 800;
+      color: $text-light;
+
+      margin-bottom: 10px;
+    }
+  }
+
+  h3 {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: "Karla";
+    font-weight: 800;
+    color: $text-light;
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-family: "Playfair1";
+    font-size: 34px;
+    // width: 401px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0px;
+    margin-bottom: 51px;
+    text-align: center;
+    display: block;
+  }
+}
+
+.section-blog {
+  h1 {
+    font-family: "Playfair1";
+    color: $title-primary;
+    font-size: $text-lg;
+    text-align: center;
+    margin: 0 0 30px 0;
+    position: relative;
+
+    &::after {
+      content: "blog";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 85px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-family: "Karla";
+      font-weight: 800;
+      color: $text-light;
+
+      margin-bottom: 10px;
+    }
+  }
+
+  h2{
+    font-family: "Playfair1";
+      font-size: 24px;
+      // width: 401px;
+      font-weight: 400;
+      line-height: 1.5;
+      margin: 0px;
+      margin-top: -20px;
+      // margin-bottom: 51px;
+      position: relative;
+      // bottom: 40px;
+  }
+
+  .blog-header {
+    position: relative;
+    h2 {
+      font-family: "Playfair1";
+      font-size: 34px;
+      // width: 401px;
+      font-weight: 400;
+      line-height: 1.5;
+      margin: 0px;
+      margin-bottom: 51px;
+      text-align: center;
+      // display: block;
+    }
+    .navigation-icons {
+      position: absolute;
+      top:50px;
+      left: 50%;
+      transform: translateX(-50%);
+      
+      
+      
+      .icons {
+        width: auto;
+        background-color: white;
+        margin: 10px;
+        padding: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+  .blog-image{
+    
+    p{
+      font-family: 'Karla';
+      letter-spacing: 4px;
+      padding: 20px 10px;
+      width: max-content;
+      background-color: white;
+      position: relative;
+      bottom: 45px;  
+      left: 20px;  
+      z-index: 999;  
+      font-size: 12px;
+      box-shadow: 0px 2px 49px -4px rgba(0, 0, 0, 0.21);
+    }
+
+  }
+  p{
+    margin: 0;
+    line-height: 1.8;
+    font-size: 16px;
+    color: gray;
+    font-family: 'Karla';
+    
+}
+}
+
+
+.section-testimonials {
+  padding: 80px 15px;
+  h1 {
+    font-family: "Playfair1";
+    color: $title-primary;
+    font-size: $text-lg;
+    text-align: center;
+    margin: 0 0 30px 0;
+    position: relative;
+
+    &::after {
+      content: "testimonies";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 85px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-family: "Karla";
+      font-weight: 800;
+      color: $text-light;
+
+      // margin-bottom: 10px;
+    }
+  }
+  h2{
+    font-family: "Playfair1";
+      font-size: 34px;
+      // width: 401px;
+      font-weight: 400;
+      line-height: 1.5;
+      margin-top: 50px;
+
+      margin-bottom: 51px;
+      text-align: center;
+     
+  }
+
+  .quote{
+    padding: 10px 20px;
+    // margin-bottom: 80px;
+    p{
+      font-family: 'Playfair1';
+      margin-bottom: 45px;
+      font-size: 30px;
+      line-height: 1.8;
+      text-align: center;
+      width: 393px;
+
+    }
+
+    
+  }
+}
+
+.section-contact{
+  margin-top: 220px;
+  margin-bottom: 118px;
+  h2{
+    font-family: "Playfair1";
+      font-size: 34px;
+      // width: 401px;
+      font-weight: 400;
+      line-height: 1.5;
+
+      margin-bottom: 60px;
+     
+  }
+
+  p {
+    line-height: 1.8;
+    font-size: 16px;
+    color: gray;
+    font-family: "Karla";
+    margin-bottom: 24px;
+  }
+
+  h3{
+    font-family: 'Karla';
+
+  }
+
+  a{
+    text-decoration: none;
+    color: #CA82F8;
+    font-family: "Karla";
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: 24px;
+  }
+
+  .social-media-icons {
+    margin-bottom: 24px;
+    .icon {
+      color: $text-link;
+      font-size: 24px;
+    }
+  }
+}
+
+.section-latest-blog{
+  margin-bottom: 80px;
+  h1{
+    font-family: "Playfair1";
+      font-size: 30px;
+      font-weight: 100;
+      margin-bottom: 60px;
+
+  }
+  h2{
+    font-family: "Playfair1";
+      font-size: 20px;
+      // width: 401px;
+      font-weight: 400;
+      line-height: 1.5;
+margin: 0;
+margin-bottom: 40px;
+     
+  }
+
+  h3{
+    font-family: "Karla";
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+}
+
+.section-newsletter{
+  margin-bottom: 80px;
+  h2{
+    font-family: "Playfair1";
+      font-size: 30px;
+      // width: 401px;
+      font-weight: 400;
+      line-height: 1.5;
+margin: 0;
+margin-bottom: 60px;
+     
+  }
+  p{
+    margin-bottom: 24px;
+    line-height: 1.8;
+    font-size: 16px;
+    color: gray;
+    font-family: "Karla";
+  }
+
+  form{
+    margin-bottom: 30px;
+    input[type="email"]{
+      // display: block;
+      width: 100%;
+      height: 50px;
+      border-radius: 30px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      background: #fafafa;
+      margin-bottom: 5px;
+      text-align: center;
+      font-family: 'Karla';
+      transition: border-color ease-in-out 0.15s;
+
+      &:focus{
+        border-color: #CA82F8;
+        outline: none;
+
+      }
+    }
+
+    button{
+      width: 100%;
+      padding: 10px 0;
+      border-radius: 30px;
+      letter-spacing: 2px;
+      font-size: 13px;
+      background: #d49af9;
+      outline: none;
+
+    text-align: center;
+      margin-right: 4px;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    font-family: 'Karla';
+    color: white;
+   
+    border: none;
+
+    }
+  }
+}
+
+.footer{
+  padding-bottom: 128px;
+  p{
+    line-height: 1.8;
+    font-size: 16px;
+    color: gray;
+    font-family: "Karla";
+    text-align: center;
+
+    span{
+      color: #CA82F8;
+    }
+  }
+}
+
+.skills-section {
+  padding: 80px 15px;
+  h1 {
+    font-family: "Playfair1";
+    color: $title-primary;
+    font-size: $text-lg;
+    text-align: center;
+    margin: 0 0 30px 0;
+    position: relative;
+
+    &::after {
+      content: "skills";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 85px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-family: "Karla";
+      font-weight: 800;
+      color: $text-light;
+
+      // margin-bottom: 10px;
+    }
+  }
+  h2{
+    font-family: "Playfair1";
+      font-size: 34px;
+      // width: 401px;
+      font-weight: 400;
+      line-height: 1.5;
+      margin-top: 50px;
+
+      margin-bottom: 51px;
+      text-align: center;
+     
+  }
+
+  .quote{
+    padding: 10px 20px;
+    // margin-bottom: 80px;
+    p{
+      font-family: 'Playfair1';
+      margin-bottom: 45px;
+      font-size: 30px;
+      line-height: 1.8;
+      text-align: center;
+      width: 393px;
+
+    }
+
+    
+  }
+}
+
+.intro-paragraph{
+  margin: 80px 0 100px 0;
+  
+    p {
+        margin-bottom: 24px;
+        line-height: 1.8;
+        font-size: 16px;
+        color: gray;
+        font-family: 'Karla';
+        width: 433px;
+      }
+  
+}
+
+
+.contact-section {
+  padding: 80px 15px;
+  h1 {
+    font-family: "Playfair1";
+    color: $title-primary;
+    font-size: $text-lg;
+    text-align: center;
+    margin: 0 0 30px 0;
+    position: relative;
+
+    &::after {
+      content: "contact";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 85px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-family: "Karla";
+      font-weight: 800;
+      color: $text-light;
+
+      // margin-bottom: 10px;
+    }
+  }
+  h2{
+    font-family: "Playfair1";
+      font-size: 34px;
+      // width: 401px;
+      font-weight: 400;
+      line-height: 1.5;
+      margin-top: 50px;
+
+      margin-bottom: 51px;
+      text-align: center;
+     
+  }
+
+  .contact-info{
+    padding-left: 15px;
+    h3{
+      font-family: 'Playfair1';
+      font-size: 24px;
+      color: $text-primary;
+      font-weight: 500;
+    }
+    .contact-items{
+      margin-left: 5px;
+
+      .contact-item{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 35px;
+        p{
+          font-family: 'Karla';
+          font-size: 16px;
+          color: $text-primary;
+        }
+        a{
+          text-decoration: none;
+          color: #CA82F8;
+        }
+      }
+    }
+  }
+  .contact-form{
+    margin-top: 60px;
+    form{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 30px;
+
+      textarea{
+        width: 100%;
+        height: 179px;
+        border: none;
+        font-family: 'Karla';
+        outline: none;
+        padding: 10px 20px;
+        color: gray;
+
+      }
+      input{
+        font-family: 'Karla';
+        width: 100%;
+        padding: 10px 20px;
+        outline: none;
+        border: none;
+        height: 50px;
+      }
+      button{
+        margin: 0 4px 4px 0;
+        padding: 13px 20px;
+        font-size: 14px;
+        letter-spacing: 2px;
+        font-family: 'Karla';
+        color: white;
+        background-color: #CA82F8;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
