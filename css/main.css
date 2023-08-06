@@ -1914,3 +1914,113 @@ body {
   width: 100%;
   height: 100%;
 }
+
+@media (max-width: 995px) {
+  .services-img-info-wrapper img {
+    display: none;
+  }
+  .services-img-info-wrapper .services-info .services-list > p {
+    display: none;
+  }
+}
+@media (min-width: 995px) {
+  .home-container {
+    max-width: 1476px;
+    margin: 0 auto;
+  }
+  .section-title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .section-title h1 {
+    font-size: 250px;
+    position: absolute;
+  }
+  .intro-img-info-container {
+    margin-top: 160px;
+    display: flex;
+  }
+  .intro-img-info-container .image-section img {
+    width: 457px;
+  }
+  .intro-img-info-container .intro-section .intro-title {
+    margin-left: 70px;
+  }
+  .intro-img-info-container .intro-section .intro-title h1 {
+    font-size: 50px;
+    font-family: "Playfair1";
+  }
+  .intro-img-info-container .intro-section .intro-about .text-trans {
+    text-transform: uppercase;
+    transform: rotate(90deg) translateY(115px) translateX(-15px);
+    color: gray;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 16px;
+  }
+  .intro-img-info-container .intro-section .intro-about .text-trans:after {
+    content: "";
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.805);
+    height: 1px;
+    width: 70px;
+    transform: translateX(15px) translateY(-5px);
+  }
+  .intro-img-info-container .intro-section .intro-about .intro-info p {
+    width: 459px;
+  }
+  .intro-paragraph {
+    display: flex;
+  }
+  .intro-paragraph p {
+    width: 389px;
+    padding: 0 15px;
+  }
+  .home-container {
+    background-color: white;
+    max-width: 1276px;
+  }
+  .home-container .section-testimonials h1 {
+    font-size: 250px;
+    margin-left: -110px;
+  }
+  .home-container .section-testimonials h1::after {
+    top: 170px;
+    right: -120px;
+  }
+  .home-container .section-testimonials h2 {
+    margin-top: -120px;
+  }
+  .services-section h1 {
+    font-size: 250px;
+  }
+  .services-img-info-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .services-img-info-wrapper img {
+    width: 513px;
+    object-fit: cover;
+    margin-top: -130px;
+  }
+  .services-img-info-wrapper .services-info {
+    margin-top: -180px;
+    margin-left: 30px;
+    width: 625px;
+  }
+  .services-img-info-wrapper .services-info .services-list p {
+    width: 595px;
+    font-weight: 400;
+    font-family: "Karla";
+    font-size: 16px;
+    line-height: 1.8;
+    color: gray;
+    margin-bottom: 80px;
+  }
+  .services-img-info-wrapper .services-info .services-list .item-container p {
+    margin: 0;
+    width: 595px;
+  }
+}
