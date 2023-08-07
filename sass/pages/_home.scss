@@ -304,6 +304,7 @@
 }
 
 .image-section{
+  width: 458px;
   // z-index: -1;
   overflow: hidden;
   height: 3px;
@@ -312,7 +313,7 @@
 .slidedown{
   // animation: slideDownAnimation 1.5s ease-in-out;
   transition: height 1s cubic-bezier(0.6, .4, 0.1, 0.335);
-  height: 526px;
+  height: 656px;
 }
 
 .slick-dots {
@@ -438,6 +439,10 @@
 .section-blog{
   .blog-items{
     .blog-item{
+      >p{
+        width: 360px;
+
+      }
       .blog-image{
         .image-wrapper{
           img{

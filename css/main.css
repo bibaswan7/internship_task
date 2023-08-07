@@ -1370,13 +1370,14 @@ body {
   }
 }
 .image-section {
+  width: 458px;
   overflow: hidden;
   height: 3px;
 }
 
 .slidedown {
   transition: height 1s cubic-bezier(0.6, 0.4, 0.1, 0.335);
-  height: 526px;
+  height: 656px;
 }
 
 .slick-dots {
@@ -1478,6 +1479,9 @@ body {
   }
   .section-testimonials .quote-container .quote p {
     min-width: 1100px;
+  }
+  .section-blog .blog-items .blog-item > p {
+    width: 360px;
   }
   .section-blog .blog-items .blog-item .blog-image .image-wrapper img {
     width: 360px;
@@ -2059,13 +2063,27 @@ body {
   .intro-img-info-container {
     margin-top: 160px;
     display: flex;
+    width: 100%;
+  }
+  .intro-img-info-container .image-section {
+    width: 458px;
+    margin-right: 120px;
   }
   .intro-img-info-container .image-section img {
-    width: 457px;
+    width: 458px;
+    height: 556px;
     object-fit: cover;
   }
+  .intro-img-info-container .intro-section {
+    display: flex;
+    flex-direction: column;
+    width: 555px;
+  }
   .intro-img-info-container .intro-section .intro-title {
-    margin-left: 70px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    width: 100%;
   }
   .intro-img-info-container .intro-section .intro-title h1 {
     font-size: 50px;
@@ -2073,7 +2091,7 @@ body {
   }
   .intro-img-info-container .intro-section .intro-about .text-trans {
     text-transform: uppercase;
-    transform: rotate(90deg) translateY(115px) translateX(-15px);
+    transform: rotate(90deg) translateY(115px) translateX(-55px);
     color: gray;
     font-weight: 500;
     font-size: 15px;
@@ -2085,7 +2103,7 @@ body {
     background-color: rgba(0, 0, 0, 0.805);
     height: 1px;
     width: 70px;
-    transform: translateX(15px) translateY(-5px);
+    transform: translateX(130px) translateY(-20px);
   }
   .intro-img-info-container .intro-section .intro-about .intro-info p {
     width: 459px;
