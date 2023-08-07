@@ -9,7 +9,7 @@
 }
 .home-container {
     // border: 1px solid black;
-  
+    max-width: 463px;
   margin: 0 auto;
   background-color: $primary;
   position: relative;
@@ -356,102 +356,3 @@
 
 
 
-@media (min-width:995px) {
-  .home-container{
-    max-width: 1276px;
-    margin: 0 auto;
-    padding: 0 30px;
-  }
-
-  .contact-section{
-    margin-top: -120px;
-    .contact-container{
-      display: flex;
-      justify-content: space-between;
-      align-items:flex-start;      // gap: 75px;
-      margin-top:140px;
-
-    }
-    .contact-info{
-      margin-left: 40px;
-      h3{
-        margin: 0;
-        margin-bottom: 30px;
-        color: rgba(78, 77, 77, 0.837);
-      }
-      .contact-items{
-        .contact-item{
-          p{
-            color: gray;
-          }
-        }
-      }
-    }
-    .contact-form{
-      flex-grow: 1;
-      margin-right: 40px;
-      margin-left: 160px;
-      margin-top:0 ;
-    }
-  }
-  .section-footer-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-top: 350px;
-    margin-left: 45px;
-    margin-right: 45px;
-.section-contact{
-  max-width: 294px;
-  margin-top: 0;
-  h2{
-    margin-top: 0;
-  }
-}
-.section-latest-blog{
-  margin-top: 0;
-  h1{
-    margin-top: 0;
-  }
-}
-.section-newsletter{
-  margin-top: 0;
-  max-width: 359px;
-
-  h2{
-    margin-top: 0;
-  }
-  
-}
-}
-.footer{
-  padding-bottom: 120px;
-}
-.section-testimonials {
-  .quote-container{
-    .quote{
-      p{
-        min-width: 1100px;
-      }
-    }
-  }
-}
-.section-blog{
-  .blog-items{
-    .blog-item{
-      >p{
-        width: 360px;
-
-      }
-      .blog-image{
-        .image-wrapper{
-          img{
-            width: 360px;
-            object-fit: cover;
-          }
-        }
-      }
-    }
-  }
-}
-}

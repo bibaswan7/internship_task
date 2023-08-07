@@ -125,3 +125,6 @@ let setfxn = setInterval(() => {
     }
 }, speed)
 
+AOS.init();
+
+
