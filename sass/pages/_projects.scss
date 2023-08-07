@@ -127,3 +127,32 @@
     }}
   }
 }
+
+@media (min-width:768px) and (max-width:995px){
+  .projects-page{
+    .section-works{
+      .work-item{
+        p{
+          // margin: 0;
+          display: block;
+          min-width: 690px;
+        }
+      }
+    }
+  }
+.services-section{
+
+  .services-info{
+    h2{
+      width: 435px;
+    }
+  }
+}
+.skills-section{
+  .circular-container{
+    display: grid;
+    grid-template:1fr 1fr / 1fr 1fr;
+    place-items: center;
+  }
+}
+}
