@@ -40,3 +40,26 @@
         
       }
 }
+
+
+@media (min-width:995px) {
+  .blog-description-container{
+    display: grid;
+    margin-top: 100px;
+    grid-template: repeat(3, auto) / repeat(3, 359px);
+    column-gap: 20px;
+  }
+  .section-blog{
+    margin-top: -120px;
+    h1{
+        font-size: 250px;
+
+        &::after{
+            top: 170px;;
+        }
+    }
+    .blog-header{
+        margin-top: -115px;
+    }
+}
+}

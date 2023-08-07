@@ -16,7 +16,12 @@
     .home-container{
         max-width: 1476px;
         margin: 0 auto;
+        .header{
+            margin-right: 0;
+            max-width: 1170px;
+        }
     }
+    
     .section-title{
         position: relative;
         display: flex;
