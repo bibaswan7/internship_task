@@ -430,7 +430,21 @@
   .quote-container{
     .quote{
       p{
-        // min-width: 1100px;
+        min-width: 1100px;
+      }
+    }
+  }
+}
+.section-blog{
+  .blog-items{
+    .blog-item{
+      .blog-image{
+        .image-wrapper{
+          img{
+            width: 360px;
+            object-fit: cover;
+          }
+        }
       }
     }
   }

@@ -1476,6 +1476,13 @@ body {
   .footer {
     padding-bottom: 120px;
   }
+  .section-testimonials .quote-container .quote p {
+    min-width: 1100px;
+  }
+  .section-blog .blog-items .blog-item .blog-image .image-wrapper img {
+    width: 360px;
+    object-fit: cover;
+  }
 }
 .skills-section {
   padding: 0 15px 80px 15px;
@@ -1530,7 +1537,7 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
   }
-  .services-img-info-wrapper .services-list {
+  .services-img-info-wrapper .service-page-list {
     display: grid;
     grid-template: auto auto/282px 282px;
   }
@@ -2016,6 +2023,12 @@ body {
   .section-blog .blog-header {
     margin-top: -115px;
   }
+  .blog-image {
+    overflow: hidden;
+  }
+  .blog-image .image-wrapper {
+    width: 360px;
+  }
 }
 @media (max-width: 995px) {
   .services-img-info-wrapper img {
@@ -2049,6 +2062,7 @@ body {
   }
   .intro-img-info-container .image-section img {
     width: 457px;
+    object-fit: cover;
   }
   .intro-img-info-container .intro-section .intro-title {
     margin-left: 70px;

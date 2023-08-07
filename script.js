@@ -7,6 +7,9 @@ $(document).ready(function () {
         $('.menu-expand').hide()
     })
 
+
+
+
     setTimeout(function () {
         $(".image-section").addClass("slidedown");
     }, 3000);
@@ -20,8 +23,34 @@ $(document).ready(function () {
         nextArrow: '',
         draggable: true,
         pauseOnHover: false,
-        pauseOnFocus: false
+        pauseOnFocus: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        
     });
+
+    $('.img-slider1').slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
+        prevArrow: '',
+        nextArrow: '',
+        draggable: true,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+        slidesToShow: 3,
+        slidesToScroll: 2,
+        responsive: [
+            {
+                breakpoint: 995,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+        
+    });
+
     $('.text-slider').slick({
         autoplay: true,
         autoplaySpeed: 3000,
@@ -32,17 +61,17 @@ $(document).ready(function () {
         draggable: true,
         pauseOnHover: false,
         pauseOnFocus: false,
-        dots:true,
+        dots: true,
         adaptiveHeight: true,
 
     });
 
     $('.prev-button').click(function () {
-        $('.img-slider').slick('slickPrev');
+        $('.img-slider1').slick('slickPrev');
     });
 
     $('.next-button').click(function () {
-        $('.img-slider').slick('slickNext');
+        $('.img-slider1').slick('slickNext');
     });
 
 })

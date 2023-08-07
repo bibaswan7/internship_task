@@ -38,6 +38,8 @@
     .image-section{
         img{
             width: 457px;
+            // height: 100%;
+            object-fit: cover;
         }
     }
     .intro-section{
