@@ -14,7 +14,7 @@ $(document).ready(function () {
         $(".image-section").addClass("slidedown");
         // $(".image-section").addClass(".img-slider");
     }, 3000);
-
+    
     $('.img-slider').slick({
         autoplay: true,
         autoplaySpeed: 3000,
@@ -89,6 +89,15 @@ $(document).ready(function () {
         infinite:true
 
     });
+    var currentPage = window.location.pathname;
+
+  // Loop through all nav links and add the active class to the corresponding link
+  $(".menu-items .nav-link").each(function() {
+    if ($(this).attr("href") === currentPage) {
+        console.log("matched")
+      $(this).addClass("active");
+    }
+  });
 
 })
 
@@ -99,32 +108,33 @@ let progressValue = [0, 0, 0, 0];
 let progressEndValue = 80;
 let speed = 10;
 let skillsPercent = [100, 85, 75, 80];
-let skillsPercentInRad = skillsPercent.map(item => item * 3.6)
+let skillsPercentInDeg = skillsPercent.map(item => item * 3.6); // Convert percentages to degrees
 
 let colors = ['rgb(0, 183, 255)', 'rgb(253,186,4)', 'rgb(237,104,124)', 'rgb(26,188,156)'];
 
 let setfxn = setInterval(() => {
-    if (progressValue.every((value, count) => value === skillsPercentInRad[count])) {
-        console.log("cleared")
+    if (progressValue.every((value, count) => Math.abs(value - skillsPercentInDeg[count]) < 1)) {
+        console.log("cleared");
         clearInterval(setfxn);
-    }
-    else {
+    } else {
         progressValue = progressValue.map((item, count) => {
-            textCon[count].textContent = `${(item / 3.6).toFixed(0)}%`
-            if (item !== skillsPercentInRad[count]) {
-                return item + 1;
-            }
-            else {
-                return item;
-            }
-        })
+            
+            return item < skillsPercentInDeg[count] ? item + 1 : item;
+        });
+
         progressBar.forEach((item, count) => {
-            textCon[count].style.color = colors[count]
+            textCon[count].style.color = colors[count];
             item.style.background = `conic-gradient(${colors[count]} ${progressValue[count]}deg, white ${progressValue[count]}deg)`;
-        })
+        });
     }
-}, speed)
+}, speed);
+
 
 AOS.init();
+
+
+
+
+
 
 

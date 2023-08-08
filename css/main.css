@@ -1086,6 +1086,10 @@ body {
   font-family: "Karla";
 }
 
+.menu-items .nav-link.active {
+  color: rgb(248, 19, 248); /* Active link color */
+}
+
 .intro-title {
   margin-bottom: 20px;
 }
